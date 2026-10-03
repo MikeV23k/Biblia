@@ -1,0 +1,26 @@
+{
+ "name": "Biblia · Lectura y estudio",
+ "short_name": "Biblia",
+ "description": "Biblia gratuita para leer, estudiar y guardar tus notas. Funciona sin internet.",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "any",
+ "lang": "es",
+ "background_color": "#EDF0F1",
+ "theme_color": "#1D5C63",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any maskable"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ]
+}
