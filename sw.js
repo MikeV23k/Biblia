@@ -1,5 +1,5 @@
 // Al actualizar la app, cambia el número de VERSION para que los usuarios reciban la nueva versión.
-const VERSION='biblia-v1.3',FILES=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
+const VERSION='biblia-v1.4',FILES=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(VERSION).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(n=>n!==VERSION&&n!=='fuentes').map(n=>caches.delete(n)))).then(()=>self.clients.claim()))});
 self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;const u=new URL(e.request.url);
